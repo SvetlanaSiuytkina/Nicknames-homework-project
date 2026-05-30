@@ -13,7 +13,7 @@ test('correct user name', () => {
 });
 
 test('no string passes validation', () => {
-  expect(validator.validateUsername('777')).toBe(false);
+  expect(validator.validateUsername(777)).toBe(false);
   expect(validator.validateUsername(undefined)).toBe(false);
   expect(validator.validateUsername(null)).toBe(false);
 });
